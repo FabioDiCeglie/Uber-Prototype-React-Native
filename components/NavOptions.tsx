@@ -9,6 +9,7 @@ import {
 import React from "react";
 import { data } from "../helpers/data";
 import tw from "tailwind-react-native-classnames";
+import { Icon } from "@rneui/base";
 
 const NavOptions = () => {
   return (
@@ -28,6 +29,12 @@ const NavOptions = () => {
               style={{ width: 120, height: 120, resizeMode: "contain" }}
             />
             <Text style={tw`mt-2 text-lg font-semibold`}>{item.title}</Text>
+            <Icon
+              style={tw`p-2 bg-black rounded-full w-10 mt-4`}
+              name="arrowright"
+              color="white"
+              type="antdesign"
+            />
           </View>
         </TouchableOpacity>
       )}
