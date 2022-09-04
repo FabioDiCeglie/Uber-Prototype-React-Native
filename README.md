@@ -15,6 +15,3 @@
       <img src="https://play-lh.googleusercontent.com/algsmuhitlyCU_Yy3IU7-7KYIhCBwx5UJG4Bln-hygBjjlUVCiGo1y8W5JNqYm9WW3s" width="8%" alt="Expo Go">
 </p>
 
-### ℹ️ More info
-
-- [LinkedIn](https://www.linkedin.com/in/fabio-di-ceglie/)
