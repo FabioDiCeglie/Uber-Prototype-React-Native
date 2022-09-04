@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
+import { useSelector } from "react-redux";
 
 export interface NavigationState {
   origin: string | null;
@@ -17,10 +18,26 @@ export const navSlice = createSlice({
   name: "nav",
   initialState,
   reducers: {
-    // setOrigin:()
+    setOrigin: (state, action) => {
+      state.origin = action.payload;
+    },
+    setDestination: (state, action) => {
+      state.destination = action.payload;
+    },
+    setTravelTimeInformation: (state, action) => {
+      state.travelTimeInformation = action.payload;
+    },
   },
 });
 
-export const {} = navSlice.actions;
+export const { setOrigin, setDestination, setTravelTimeInformation } =
+  navSlice.actions;
+
+// Selectors
+export const selectOrigin = (state: any) => useSelector(state.nav.origin);
+export const selectDestination = (state: any) =>
+  useSelector(state.nav.destination);
+export const selectTravelTimeInformation = (state: any) =>
+  useSelector(state.nav.travelTimeInformation);
 
 export default navSlice.reducer;
