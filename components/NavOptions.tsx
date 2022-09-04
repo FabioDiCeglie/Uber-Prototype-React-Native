@@ -10,8 +10,10 @@ import React from "react";
 import { data } from "../helpers/data";
 import tw from "tailwind-react-native-classnames";
 import { Icon } from "@rneui/base";
+import { useNavigation } from "@react-navigation/native";
 
 const NavOptions = () => {
+  const navigation = useNavigation();
   return (
     <FlatList
       data={data}
@@ -22,6 +24,8 @@ const NavOptions = () => {
           style={tw`
         p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40
         `}
+          // @ts-ignore
+          onPress={() => navigation.navigate(item.screen)}
         >
           <View>
             <Image source={{ uri: item.image }} style={styles.images} />
