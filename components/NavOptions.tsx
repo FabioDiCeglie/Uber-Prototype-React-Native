@@ -24,10 +24,7 @@ const NavOptions = () => {
         `}
         >
           <View>
-            <Image
-              source={{ uri: item.image }}
-              style={{ width: 120, height: 120, resizeMode: "contain" }}
-            />
+            <Image source={{ uri: item.image }} style={styles.images} />
             <Text style={tw`mt-2 text-lg font-semibold`}>{item.title}</Text>
             <Icon
               style={tw`p-2 bg-black rounded-full w-10 mt-4`}
@@ -44,4 +41,10 @@ const NavOptions = () => {
 
 export default NavOptions;
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  images: {
+    width: 120,
+    height: 120,
+    resizeMode: "contain",
+  },
+});
