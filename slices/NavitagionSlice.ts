@@ -34,10 +34,9 @@ export const { setOrigin, setDestination, setTravelTimeInformation } =
   navSlice.actions;
 
 // Selectors
-export const selectOrigin = (state: any) => useSelector(state.nav.origin);
-export const selectDestination = (state: any) =>
-  useSelector(state.nav.destination);
+export const selectOrigin = (state: any) => state.nav.origin;
+export const selectDestination = (state: any) => state.nav.destination;
 export const selectTravelTimeInformation = (state: any) =>
-  useSelector(state.nav.travelTimeInformation);
+  state.nav.travelTimeInformation;
 
 export default navSlice.reducer;
