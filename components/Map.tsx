@@ -4,14 +4,7 @@ import MapView, { Marker } from "react-native-maps";
 import tw from "tailwind-react-native-classnames";
 import { useSelector } from "react-redux";
 import { selectOrigin } from "../slices/NavitagionSlice";
-
-interface Origin {
-  location: Location;
-}
-interface Location {
-  lat: number;
-  lng: number;
-}
+import { Origin } from "../helpers/types";
 
 const Map = () => {
   const origin: Origin = useSelector(selectOrigin);
@@ -25,7 +18,19 @@ const Map = () => {
         latitudeDelta: 0.005,
         longitudeDelta: 0.005,
       }}
-    />
+    >
+      {origin?.location && (
+        <Marker
+          coordinate={{
+            latitude: origin.location.lat,
+            longitude: origin.location.lng,
+          }}
+          title="Origin"
+          description={origin.description}
+          identifier="origin"
+        />
+      )}
+    </MapView>
   );
 };
 
