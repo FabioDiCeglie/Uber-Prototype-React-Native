@@ -33,13 +33,13 @@ const NavFavourites = () => {
         <View style={[tw`bg-gray-200`, { height: 0.5 }]} />
       )}
       renderItem={({ item: { location, destination, icon } }) => (
-        <TouchableOpacity style={tw`flex-row items-center p-5 hover-`}>
+        <TouchableOpacity style={tw`flex-row items-center p-5`}>
           <Icon
             name={icon}
             type="ionicon"
             color="white"
             size={18}
-            style={tw`mr-4 rounded-full bg-gray-300 p-3 hover:bg-slate-800`}
+            style={tw`mr-4 rounded-full bg-gray-500 p-3`}
             tvParallaxProperties={undefined}
           />
           <View>

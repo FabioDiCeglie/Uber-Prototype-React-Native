@@ -8,13 +8,14 @@ import { setDestination } from "../slices/NavitagionSlice";
 import { useNavigation } from "@react-navigation/native";
 // @ts-ignore
 import { GOOGLE_MAPS_APIKEY } from "@env";
+import NavFavourites from "./NavFavourites";
 
 const NavigateCard = () => {
   const dispatch = useDispatch();
   const navigation = useNavigation();
   return (
     <SafeAreaView style={tw`bg-white flex-1`}>
-      <Text style={tw`text-center py-5 text-xl`}> Good morning</Text>
+      <Text style={tw`ml-5 py-5 text-xl`}> Book your drive</Text>
       <View style={tw`border-t border-gray-200 flex-shrink`}></View>
       <View>
         <GooglePlacesAutocomplete
@@ -42,6 +43,8 @@ const NavigateCard = () => {
           minLength={2}
           debounce={400}
         />
+
+        <NavFavourites />
       </View>
     </SafeAreaView>
   );
