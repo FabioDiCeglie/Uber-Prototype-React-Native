@@ -22,6 +22,11 @@ const RideOptionsCard = () => {
   const [selected, setSelected] = useState(null);
   const travelTimeInformation = useSelector(selectTravelTimeInformation);
 
+  var lastIndex = travelTimeInformation?.distance.text.split("");
+  const miles = lastIndex.slice(0, -4).join("");
+  const km = parseInt(miles) * 1.60934;
+
+  console.log(km.toFixed(2));
   return (
     <SafeAreaView style={tw`bg-white flex-grow`}>
       <View>
@@ -37,7 +42,7 @@ const RideOptionsCard = () => {
           />
         </TouchableOpacity>
         <Text style={tw`text-center py-5 text-xl`}>
-          Select a Ride - {travelTimeInformation?.distance.text}
+          Select a Ride - {km.toFixed(2)} km
         </Text>
       </View>
 
