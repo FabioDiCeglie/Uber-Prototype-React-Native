@@ -22,11 +22,10 @@ const RideOptionsCard = () => {
   const [selected, setSelected] = useState(null);
   const travelTimeInformation = useSelector(selectTravelTimeInformation);
 
-  var lastIndex = travelTimeInformation?.distance.text.split("");
-  const miles = lastIndex.slice(0, -4).join("");
+  const lastIndex = travelTimeInformation?.distance?.text.split("");
+  const miles = lastIndex?.slice(0, -4).join("");
   const km = parseInt(miles) * 1.60934;
 
-  console.log(km.toFixed(2));
   return (
     <SafeAreaView style={tw`bg-white flex-grow`}>
       <View>
@@ -71,7 +70,7 @@ const RideOptionsCard = () => {
             />
             <View style={tw`-ml-6`}>
               <Text style={tw`text-xl font-semibold`}>{title}</Text>
-              <Text>{travelTimeInformation?.duration.text} Travel Time</Text>
+              <Text>{travelTimeInformation?.duration?.text} Travel Time</Text>
             </View>
 
             <Text style={tw`text-xl`}>
@@ -79,7 +78,7 @@ const RideOptionsCard = () => {
                 style: "currency",
                 currency: "EUR",
               }).format(
-                (travelTimeInformation?.duration.value *
+                (travelTimeInformation?.duration?.value *
                   SURGE_CHARGE_RATE *
                   multiplier) /
                   100
