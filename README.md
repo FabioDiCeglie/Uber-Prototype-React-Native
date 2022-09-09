@@ -1,5 +1,9 @@
 # Uber prototype with React Native
 
+### Start
+
+Clone the repo - `yarn` - `expo start` - Open your simulator with `i` or scan the QR Code with the phone and Expo Go App
+
 ### 🤖 Technologies
 
 - Languages: Typescript/Javascript
@@ -14,4 +18,3 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1200px-CSS3_logo_and_wordmark.svg.png" width="5%" alt="CSS">
       <img src="https://play-lh.googleusercontent.com/algsmuhitlyCU_Yy3IU7-7KYIhCBwx5UJG4Bln-hygBjjlUVCiGo1y8W5JNqYm9WW3s" width="8%" alt="Expo Go">
 </p>
-
