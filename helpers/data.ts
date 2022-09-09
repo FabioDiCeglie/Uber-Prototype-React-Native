@@ -40,3 +40,18 @@ export const dataRide = [
     image: "https://links.papareact.com/3pn",
   },
 ];
+
+export const dummyData = [
+  {
+    id: "1",
+    icon: "home",
+    location: "Home",
+    destination: "Amsterdam, Netherlands",
+  },
+  {
+    id: "2",
+    icon: "briefcase",
+    location: "Work",
+    destination: "Rotterdam, Netherlands",
+  },
+];

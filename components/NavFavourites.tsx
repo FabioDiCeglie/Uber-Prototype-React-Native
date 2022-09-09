@@ -8,21 +8,7 @@ import {
 import React from "react";
 import { Icon } from "react-native-elements";
 import tw from "tailwind-react-native-classnames";
-
-const dummyData = [
-  {
-    id: "1",
-    icon: "home",
-    location: "Home",
-    destination: "Amsterdam, Netherlands",
-  },
-  {
-    id: "2",
-    icon: "briefcase",
-    location: "Work",
-    destination: "Rotterdam, Netherlands",
-  },
-];
+import { dummyData } from "../helpers/data";
 
 const NavFavourites = () => {
   return (
