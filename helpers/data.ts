@@ -16,12 +16,6 @@ export const data = [
 
 export const dataRide = [
   {
-    id: "Uber Saver",
-    title: "Uber Saver",
-    multiplier: 1,
-    image: "https://links.papareact.com/3pn",
-  },
-  {
     id: "Uber-X",
     title: "Uber X",
     multiplier: 1,
