@@ -16,10 +16,16 @@ export const data = [
 
 export const dataRide = [
   {
-    id: "Uber-X",
-    title: "Uber X",
-    multiplier: 1,
+    id: "Uber Saver",
+    title: "Uber Saver",
+    multiplier: 0.85,
     image: "https://links.papareact.com/3pn",
+  },
+  {
+    id: "Uber-LUX",
+    title: "Uber Lux",
+    multiplier: 1.75,
+    image: "https://links.papareact.com/7pf",
   },
   {
     id: "Uber-XL",
@@ -28,9 +34,9 @@ export const dataRide = [
     image: "https://links.papareact.com/5w8",
   },
   {
-    id: "Uber-LUX",
-    title: "Uber Lux",
-    multiplier: 1.75,
-    image: "https://links.papareact.com/7pf",
+    id: "Uber-X",
+    title: "Uber X",
+    multiplier: 1,
+    image: "https://links.papareact.com/3pn",
   },
 ];
