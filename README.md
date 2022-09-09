@@ -8,7 +8,7 @@ Clone the repo - `yarn` - `expo start` - Open your simulator with `i` or scan th
 
 - Languages: Typescript/Javascript
 - Frontend Libraries: React Native - TailwindCSS - Redux Toolkit
-<br />
+
   Deployed with Expo
 
 <p align="center">
